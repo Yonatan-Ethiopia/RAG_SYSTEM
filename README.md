@@ -13,11 +13,11 @@ The system performs the following steps:
     * The results are combined using an `EnsembleRetriever` to maximize relevance.
 6.  **Generation**: The retrieved context is passed to the OpenAI `gpt-3.5-turbo` model to generate a final, informed answer.
 
-## 🚀 Getting Started
+## Getting Started
 
 This guide will walk you through the setup and usage of the project.
 
-### 📋 Prerequisites
+### Prerequisites
 
 To run this project, you need the following:
 
@@ -44,7 +44,7 @@ export OPENAI_API_KEY="your_api_key_here"
 
 ---
 
-## 📦 Installation
+## Installation
 
 1.  **Clone the repository:**
     ```bash
@@ -66,3 +66,27 @@ export OPENAI_API_KEY="your_api_key_here"
     ```bash
     pip install -r requirements.txt
     ```
+## Usage
+1. **Run the main script from your terminal:**
+   ```bash
+   python main.py
+   ```
+2. **The script will automatically perform the following:**
+   * Check for an existing ChromaDB vector store in the db/chromaDB directory.
+   * If the vector store does not exist, it will create and populate it with embeddings from the PDF.
+   * If the vector store already exists, it will load it directly.
+3. **Once the setup is complete, you will see a prompt asking for your question.**
+   ```bash
+   Your question:
+   ```
+4. **Enter your question, and the system will retrieve the relevant context and provide a generated answer.**
+5. **To exit the program, simply press Ctrl + C.**
+##  Project Structure
+```bash
+.
+├── example_data/
+│   └── RAG.pdf               # The document to be used for RAG
+├── db/                       # Directory for the persistent ChromaDB vector store
+├── main.py                   # The main script to run the RAG system
+└── requirements.txt          # List of all project dependencies
+```

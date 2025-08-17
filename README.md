@@ -1,6 +1,6 @@
 # Simple RAG System with Hybrid Retrieval
 
-This project is a simple implementation of a Retrieval-Augmented Generation (RAG) system using Python, LangChain, and ChromaDB. It work in CLI, so there is no web interface or UI.
+This project is a simple implementation of a Retrieval-Augmented Generation (RAG) system using Python, LangChain, and ChromaDB. It works in CLI, so there is no web interface or UI.
 
 The system performs the following steps:
 1.  **Document Ingestion**: Loads a PDF file from the `example_data` directory.

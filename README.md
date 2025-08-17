@@ -32,7 +32,7 @@ It is highly recommended to set your API key as an environment variable to preve
 Open your terminal and run the following command. For a permanent solution, add this line to your `~/.bashrc` or `~/.zshrc` file.
 ```bash
 export OPENAI_API_KEY="your_api_key_here"
-
+```
 **For Windows:**
 1.  Open the Start Menu and search for "Environment Variables."
 2.  Click on "Edit the system environment variables."

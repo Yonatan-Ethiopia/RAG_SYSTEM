@@ -48,8 +48,8 @@ export OPENAI_API_KEY="your_api_key_here"
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone https://github.com/Yonatan-Ethiopia/RAG_SYSTEM.git
+    cd RAG_SYSTEM
     ```
 
 2.  **Create and activate a Python virtual environment (recommended):**
